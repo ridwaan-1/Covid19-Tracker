@@ -1,0 +1,19 @@
+#livecases-table {
+    font-family: var(--font-family);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#livecases-table td,
+#livecases-table th {
+    padding: 8px;
+}
+
+#livecases-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#livecases-table tr:hover {
+    background-color: #ddd;
+}

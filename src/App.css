@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+:root {
+  --bg-color: #e3edf7;
+  --font-family: 'Lato', sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  padding: 20px;
+  max-width: 2000px;
+  max-height: 2000px;
+  margin: auto;
+} 
+
+p, h1, h2, h3, a {
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-wrapper {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+               -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: rgb(4, 186, 28);
+}
+
+.yellow-text {
+  color: rgb(74, 77, 75);
+}
+
+.flex-display {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center-vertical {
+  align-items: center;
+}
+
+.flex-center-horizontal {
+  justify-content: center;
+}
+
+.flex-spaceBetween {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1190px) {
+  body {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.1em;
+  }
+}

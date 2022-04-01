@@ -1,0 +1,47 @@
+.side-column {
+    margin-left: 20px;
+    width: max(25% - 20px, 220px);
+}
+
+.livecases-info {
+    width: 100%;
+}
+
+.livecases-info {
+        height: 1240px;
+}
+
+.table-container {
+    height: 97%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.table-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media screen and (max-width: 1190px) {
+
+    .side-column {
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+        display: flex;
+    }
+    .livecases-info {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .side-column {
+        flex-direction: column;
+    }
+    .livecases-info {
+        margin-top: 20px;
+    }
+}
+  
